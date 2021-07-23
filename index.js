@@ -2,6 +2,9 @@ const bill=document.querySelector("#bill")
 const cash=document.querySelector("#cash")
 
 const btnGetChange=document.querySelector("#btn_getChange")
+const noOfNotes=document.querySelectorAll(".noOfNotes");
+
+console.log("noOfNotes :"+noOfNotes)
 
 const curr=[2000,500,100,50,20,10,5,2,1]
 var result=[0,0,0,0,0,0,0,0,0];
@@ -35,6 +38,7 @@ function getChange(change)
             let notes=Math.floor(change/curr[i])
             change-=(notes*curr[i])
             result[i]=notes
+            noOfNotes[i].innerHTML=notes
         }
     }
     return result
