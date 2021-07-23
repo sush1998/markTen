@@ -2,18 +2,60 @@
 
 html{
     margin: 0;
-    background-color: cadetblue;
+    
     margin: auto;
     text-align: center;
 }
 
+section
+{
+    width: 30%;
+    background-color: #1111;
+    margin: auto;
+    padding: 2rem;
+    background-color: #a5a58d;
+}
+.heading
+{
+    background-color: #ffee32;
+    padding: 1rem;
+}
+h1{
+    text-align: center;
+    text-justify: auto;
+}
+hr{
+   color: #000000;
+    margin: 2rem;
+}
+p{
+    width: 70%;
+    margin:auto;
+    text-align: center;
+    text-justify: distribute-all-lines;
+}
+.label
+{
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+#return_change
+{
+    width: fit-content;
+    font-size: x-large;
+    border: 1px solid #111;
+    padding: 10px;
+    display: none;
+    background-color: #ee6055;
+}
 .input_Content
 {
     margin: auto;
 }
 
 input{
-    width: 70%;
+    width: 20rem;
     margin:1rem auto;
     height: 2rem;
     display: block;
@@ -27,10 +69,27 @@ button
     margin: 1rem auto;
     font-size: large;
 }
+
+button:hover{
+    background-color: #25a244;
+    color: #FFFFFF;
+}
+.change_txt
+{
+    font-size: larger;
+    background-color: #ee6055;
+
+}
+
 td
 {
-    width: 2rem;
+    width: 3rem;
+    height: 3rem;
         
+}
+th
+{
+    width: 6rem;
 }
 table, th, td 
 {
@@ -45,4 +104,25 @@ table, th, td
 .output_content
 {
     display:none;
+    width: 100%;
+    
+    margin: 4rem auto;
+    
+}
+
+table
+{
+    
+    table-layout: auto;
+    margin: auto;
+}
+
+.error
+{
+    color: #d90429;
+}
+
+.change
+{
+    background-color: #25a244;
 }
