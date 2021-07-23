@@ -50,9 +50,6 @@ function checkCashGiven(bill_amount,cash_given)
                 result[i]=notes
                 noOfNotes[i].innerHTML=notes
             }
-            else{
-                noOfNotes[i].innerHTML=0
-            }
         }
         console.log(result)
     }
@@ -76,6 +73,7 @@ btnGetChange.addEventListener('click',()=>
     if(!checkCashGiven(bill_amount,cash_given))
     {
         errorCash.innerHTML="Please enter valid cash"
+        output_content.style.display="none"
     }
     else
     {
