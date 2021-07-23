@@ -3,7 +3,6 @@
 html{
     margin: 0;
     
-    margin: auto;
     text-align: center;
 }
 
@@ -125,4 +124,47 @@ table
 .change
 {
     background-color: #25a244;
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+    
+    html
+    {
+        margin: 0;
+        
+    }
+    section
+    {
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0 auto;
+    }
+
+    .heading
+    {
+        margin: 10px;
+    }
+    hr 
+    {
+        margin: 0.5rem auto 2rem auto;
+    }
+    input
+    {
+        width: 8rem;
+        font-size: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    td
+    {
+        width: 1rem;
+        height: 1rem;
+        padding: 2px;
+    }
+    th
+    {
+        width: 2rem;
+    }
 }
