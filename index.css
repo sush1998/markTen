@@ -15,7 +15,11 @@ section
     padding: 2rem;
     background-color: #a5a58d;
 }
-
+.heading
+{
+    background-color: #ffee32;
+    padding: 1rem;
+}
 h1{
     text-align: center;
     text-justify: auto;
