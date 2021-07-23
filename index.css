@@ -13,13 +13,17 @@ section
     background-color: #1111;
     margin: auto;
     padding: 2rem;
+    background-color: #a5a58d;
 }
 
 h1{
     text-align: center;
     text-justify: auto;
 }
-
+hr{
+   color: #000000;
+    margin: 2rem;
+}
 p{
     width: 70%;
     margin:auto;
@@ -29,6 +33,7 @@ p{
 .label
 {
     font-size: large;
+    font-family: 'Open Sans', sans-serif;
 }
   
 #return_change
@@ -37,7 +42,8 @@ p{
     font-size: x-large;
     border: 1px solid #111;
     padding: 10px;
-
+    display: none;
+    background-color: #ee6055;
 }
 .input_Content
 {
@@ -59,11 +65,18 @@ button
     margin: 1rem auto;
     font-size: large;
 }
+
+button:hover{
+    background-color: #25a244;
+    color: #FFFFFF;
+}
 .change_txt
 {
     font-size: larger;
+    background-color: #ee6055;
 
 }
+
 td
 {
     width: 3rem;
@@ -98,4 +111,14 @@ table
     
     table-layout: auto;
     margin: auto;
+}
+
+.error
+{
+    color: #d90429;
+}
+
+.change
+{
+    background-color: #25a244;
 }

@@ -41,6 +41,7 @@ function checkCashGiven(bill_amount,cash_given)
         let result=[0,0,0,0,0,0,0,0,0];
         let change=cash_given-bill_amount;
         return_change.innerHTML=`Change = ${change}`
+        return_change.style.display="block"
         console.log("getting change"+" "+change)
         for(let i=0;i<curr.length;i++)
         {
@@ -50,6 +51,7 @@ function checkCashGiven(bill_amount,cash_given)
                 change-=(notes*curr[i])
                 result[i]=notes
                 noOfNotes[i].innerHTML=notes
+                noOfNotes[i].className="change"
             }
             else
             {
