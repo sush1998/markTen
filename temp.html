@@ -11,15 +11,17 @@
     <div id="input_Content">
         <div>
             <div class="label">Bill Amount:</div>
-            <input id="bill" placeholder="enter bill">  
+            <input id="bill" placeholder="enter bill">
+            <button id="btn_next">Next</button>
+            <span id="errorBill"></span>
         </div>
         <div class="display_cashGiven">
             <div class="label">Cash Given:</div>
-            <input id="cash" placeholder="cash given">  
+            <input id="cash" placeholder="cash given">
+            <button id="btn_getChange">Get change</button>
+            <span id="errorCash"></span>
         </div>
-        <button id="btn_getChange">Get change</button>
     </div>
-    
     <div class="output_content">
         <table>
             <tr>
@@ -48,11 +50,6 @@
             </tr>
         </table>
     </div>
-   
-    
-
-    
-
     <script src="cash.js"></script>
 </body>
 </html>

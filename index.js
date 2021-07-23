@@ -16,7 +16,7 @@ function initiate()
     let cash_given=parseInt(cash.value); //show only if bill_amt is valid
 
 
-    if(bill_amount>0 && cash_given>bill_amount)
+    if(bill_amount>0 && cash_given>=bill_amount)
     {
         let change=cash_given-bill_amount
         console.log(typeof(change)+" "+change)
