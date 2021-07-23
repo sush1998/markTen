@@ -1,3 +1,42 @@
+
+
+html{
+    margin: 0;
+    background-color: cadetblue;
+    margin: auto;
+    text-align: center;
+}
+
+.input_Content
+{
+    margin: auto;
+}
+
+input{
+    width: 70%;
+    margin:1rem auto;
+    height: 2rem;
+    display: block;
+    font-size: 1.5rem ;
+    text-align: center;
+}
+
+button
+{
+    display: block;
+    margin: 1rem auto;
+    font-size: large;
+}
+td
+{
+    width: 2rem;
+        
+}
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 .display_cashGiven
 {
     display:none;
