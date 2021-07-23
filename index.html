@@ -7,43 +7,50 @@
     <title>Cash Register</title>
 </head>
 <body>
-    <div>
-        <div class="label">Bill Amount:</div>
-        <input id="bill" placeholder="enter bill">  
+    <div id="input_Content">
+        <div>
+            <div class="label">Bill Amount:</div>
+            <input id="bill" placeholder="enter bill">  
+        </div>
+        <div>
+            <div class="label">Cash Given:</div>
+            <input id="cash" placeholder="cash given">  
+        </div>
+        <button id="btn_getChange">Get change</button>
     </div>
-    <div>
-        <div class="label">Cash Given:</div>
-        <input id="cash" placeholder="cash given">  
+    
+    <div class="output_content">
+        <table>
+            <tr>
+                <th>Number</th>
+                <td class="noOfNotes">0</td>
+                <td class="noOfNotes">0</td>
+                <td class="noOfNotes">0</td>
+                <td class="noOfNotes">0</td>
+                <td class="noOfNotes">0</td>
+                <td class="noOfNotes">0</td>
+                <td class="noOfNotes">0</td>
+                <td class="noOfNotes">0</td>
+                <td class="noOfNotes">0</td>
+            </tr>
+            <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
     </div>
-    <button id="btn_getChange">Get change</button>
+   
+    
 
-    <table>
-        <tr>
-            <th>Number</th>
-            <td class="noOfNotes">0</td>
-            <td class="noOfNotes">0</td>
-            <td class="noOfNotes">0</td>
-            <td class="noOfNotes">0</td>
-            <td class="noOfNotes">0</td>
-            <td class="noOfNotes">0</td>
-            <td class="noOfNotes">0</td>
-            <td class="noOfNotes">0</td>
-            <td class="noOfNotes">0</td>
-        </tr>
-        <tr>
-            <th>Notes</th>
-            <td>2000</td>
-            <td>500</td>
-            <td>100</td>
-            <td>50</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td>2</td>
-            <td>1</td>
-        </tr>
-        
-    </table>
+    
 
     <script src="index.js"></script>
 </body>
