@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<section>
     <h1>Cash Register Manager</h1>
     <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+    <hr>
     <div class="input_Content">
         <div class="label">Bill Amount:</div>
         <input type="number" id="bill" placeholder="enter bill">
@@ -21,6 +23,9 @@
         <input type="number" id="cash" placeholder="cash given">
         <button id="btn_getChange">Get change</button>
         <span id="errorCash"></span>
+    </div>
+    <div id="change_txt">
+        <p id="return_change"></p>
     </div>
     </div>
     <div class="output_content">
@@ -52,7 +57,7 @@
             </tr>
         </table>
     </div>
-    
+</section>
     <script src="cash.js"></script>
 </body>
 </html>

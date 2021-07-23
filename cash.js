@@ -3,7 +3,7 @@ const cash=document.querySelector("#cash")
 
 const errorBill=document.querySelector("#errorBill")
 const errorCash=document.querySelector("#errorCash")
-
+const return_change=document.querySelector("#return_change")
 const btn_next=document.querySelector("#btn_next")
 const btnGetChange=document.querySelector("#btn_getChange")
 const noOfNotes=document.querySelectorAll(".noOfNotes");
@@ -40,6 +40,7 @@ function checkCashGiven(bill_amount,cash_given)
     {
         let result=[0,0,0,0,0,0,0,0,0];
         let change=cash_given-bill_amount;
+        return_change.innerHTML=`Change = ${change}`
         console.log("getting change"+" "+change)
         for(let i=0;i<curr.length;i++)
         {
@@ -50,7 +51,13 @@ function checkCashGiven(bill_amount,cash_given)
                 result[i]=notes
                 noOfNotes[i].innerHTML=notes
             }
+            else
+            {
+                noOfNotes[i].innerHTML=0
+            }
+
         }
+        
         console.log(result)
     }
 
